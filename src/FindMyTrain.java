@@ -37,7 +37,7 @@ public class FindMyTrain {
         List<Schedule> result = trainSystem.findMyTrain(source.toLowerCase(),destination.toLowerCase());
         System.out.println("your train from "+source+" to "+destination+" => ");
         for(Schedule schedule:result){
-            System.out.println(schedule.getTrain());
+            System.out.println(schedule.getTrain()+" "+schedule.getPlatform()+" Arrival Time is => "+schedule.getArrivalTime()+", Departure Time is => "+schedule.getDepartureTime());
         }
     }
 }
