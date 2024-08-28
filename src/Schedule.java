@@ -5,14 +5,14 @@ public class Schedule {
     private Station station;
     private Platform platform;
     private String arrivalTime;
-    private String departureTime;
+    private String destinationTime;
 
-    public Schedule(Train train, Station station, Platform platform, String arrivalTime, String departureTime) {
+    public Schedule(Train train, Station station, Platform platform, String arrivalTime, String destinationTime) {
         this.train = train;
         this.station = station;
         this.platform = platform;
         this.arrivalTime = arrivalTime;
-        this.departureTime = departureTime;
+        this.destinationTime = destinationTime;
     }
 
     public Train getTrain() {
@@ -47,12 +47,12 @@ public class Schedule {
         this.arrivalTime = arrivalTime;
     }
 
-    public String getDepartureTime() {
-        return departureTime;
+    public String getDestinationTime() {
+        return destinationTime;
     }
 
-    public void setDepartureTime(String departureTime) {
-        this.departureTime = departureTime;
+    public void setDestinationTime(String destinationTime) {
+        this.destinationTime = destinationTime;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class Schedule {
                 ", station=" + station +
                 ", platform=" + platform +
                 ", arrivalTime='" + arrivalTime + '\'' +
-                ", departureTime='" + departureTime + '\'' +
+                ", departureTime='" + destinationTime + '\'' +
                 '}';
     }
 }
