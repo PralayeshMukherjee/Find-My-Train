@@ -39,5 +39,6 @@ public class FindMyTrain {
         for(Schedule schedule:result){
             System.out.println(schedule.getTrain()+" "+schedule.getPlatform()+" Arrival Time is => "+schedule.getArrivalTime()+", Destination Time is => "+schedule.getDestinationTime());
         }
+        sc.close();
     }
 }
